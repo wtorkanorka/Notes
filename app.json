@@ -7,10 +7,34 @@
     "icon": "./assets/images/icon.png",
     "scheme": "notes",
     "userInterfaceStyle": "automatic",
-    "ios": { "supportsTablet": true },
-    "android": { "predictiveBackGestureEnabled": false },
-    "web": { "output": "static", "favicon": "./assets/images/favicon.png" },
-    "plugins": ["expo-router", "expo-sqlite"],
-    "experiments": { "typedRoutes": false, "reactCompiler": true }
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.wtorkanorka.Notes",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "predictiveBackGestureEnabled": false,
+      "package": "com.wtorkanorka.Notes"
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite"
+    ],
+    "experiments": {
+      "typedRoutes": false,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "5447ebc8-b12f-4036-b30f-912213bba6a3"
+      }
+    }
   }
 }
