@@ -1,6 +1,6 @@
 {
   "cli": {
-    "version": ">= 15.0.9"
+    "version": ">= 10.2.0"
   },
   "build": {
     "development": {
@@ -14,11 +14,9 @@
       }
     },
     "production": {
+      "distribution": "store",
       "android": {
         "buildType": "app-bundle"
-      },
-      "ios": {
-        "autoIncrement": true
       }
     }
   },
